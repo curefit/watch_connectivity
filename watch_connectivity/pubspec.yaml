@@ -11,7 +11,11 @@ dependencies:
   flutter:
     sdk: flutter
 
-  watch_connectivity_platform_interface: ^0.2.0
+  watch_connectivity_platform_interface:
+    git:
+      url: git@github.com:curefit/watch_connectivity.git
+      path: watch_connectivity_platform_interface
+      ref: 0b054eb95c45c5427b2e91f96c62fe2dcea0400e
 
 dev_dependencies:
   flutter_test:

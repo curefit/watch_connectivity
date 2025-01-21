@@ -13,6 +13,9 @@ class WatchConnectivity extends WatchConnectivityBase {
   @override
   Future<bool> get isPaired => super.isPaired;
 
+  @override
+  Future<bool> get isWatchAppInstalled => super.isWatchAppInstalled;
+
   /// WearOS: If any nodes are connected
   @override
   Future<bool> get isReachable => super.isReachable;

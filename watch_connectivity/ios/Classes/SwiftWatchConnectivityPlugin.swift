@@ -31,6 +31,8 @@ public class SwiftWatchConnectivityPlugin: NSObject, FlutterPlugin {
     case "isSupported":
       result(WCSession.isSupported())
     case "isPaired":
+      result(session?.isPaired ?? false)
+    case "isWatchAppInstalled":
       result(session?.isWatchAppInstalled ?? false)
     case "isReachable":
       result(session?.isReachable ?? false)
